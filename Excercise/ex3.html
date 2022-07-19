@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Average number of array</title>
+</head>
+
+<body>
+<h3>Average number of array</h3>
+<p id="demo"></p>
+<script>
+    let arr=[2,4,6,8,10,12,14,16,18,20]
+    let ave=0;
+    let sum=0;
+    let max = arr[0]
+    let n=arr.length;
+    for(let i =0; i <arr.length; i++){ 
+        sum+= Number(arr[i]);
+      
+        if(arr[i]>max){
+            max=arr[i];          
+        }
+        
+    }
+    console.log(sum)
+    ave= (sum/n);
+    document.getElementById("demo").innerHTML=max+"Average is"+ave;
+
+</script>
+</body>
+
+</html>

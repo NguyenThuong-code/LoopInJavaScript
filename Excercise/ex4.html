@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reverse Array</title>
+</head>
+
+<body>
+
+<H3>Reverse Array in JavaScript</H3>
+<h4>Array Before Reverse:</h4>
+<p id="demo"></p>
+<h4>Array After Reverse:</h4>
+<p id="demo1"></p>
+<Script>
+    let arr= [-3,5,1,3,2,10]
+    let arr1= []
+    document.getElementById("demo").innerHTML=arr;
+    for(let i = arr.length-1; i>=0; i--){
+        arr1+=arr[i] +",";    
+    }
+    document.getElementById("demo1").innerHTML=arr1;
+   
+</Script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Element to Array</title>
+</head>
+
+<body>
+<H2>Sample Screen</H2>
+<input id="value" onfocus="this.value=''" type="text">
+<input type="button" value="Add" onclick="add()">
+<input type="button" value="Display" onclick="display()">
+<p id="demo"></p>
+<hr>
+<Script>
+ let arr =[];
+    function add(){
+    let val= document.getElementById("value").value;
+    // txt=val;
+    arr.push(val);   
+    }
+    function display(){
+        let txt="";
+        for(let i =0; i<arr.length;i++){
+            txt+= "Element"+i +": " +arr[i] +"<br>"
+        }
+        document.getElementById("demo").innerHTML = txt
+    }
+
+</Script>
+</body>
+
+</html>

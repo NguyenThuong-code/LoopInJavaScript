@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Find The Largest Number</title>
+</head>
+
+<body>
+<h2>Largest Number in array</h2>
+<h4>Array</h4>
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+    let numbers=[-3,5,1,3,2,10];
+    let max = numbers[0];
+    document.getElementById("demo").innerHTML= numbers;
+    for(let i = 0; i < numbers.length; i++){
+        if(numbers[i]> max){
+            max=numbers[i]
+        }
+    }
+    document.write("The max value in array: "+ max);
+    
+    </script>
+</body>
+
+</html>
